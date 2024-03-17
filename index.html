@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techy Portfolio</title>
+</head>
+<body>
+<div class="header">
+  <h1>StleathStride|Projects</h1>
+</div>
+<div class="cardContainer">
+  <div class="card">
+    <img src="img/taskplanner.png" alt="Task Planner">
+    <h3 class="title">Task Planner</h3>
+    <div class="overlay">
+      <p class="description">Built with ReactJs</p>
+      <a href="https://chris0707.github.io/taskplanner/" class="btn" target="_blank">Visit Project</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/expensetracker.png" alt="Expense Tracker">
+    <h3 class="title">Expense Tracker</h3>
+    <div class="overlay">
+      <p class="description">Built with ReactJs</p>
+      <a href="https://chris0707.github.io/expensetracker/" class="btn" target="_blank">Visit Project</a>
+    </div>
+  </div>
+</div>
+<script>
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.querySelector('.overlay').style.opacity = '1';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.querySelector('.overlay').style.opacity = '0';
+    });
+  });
+</script>
+</body>
+<footer>
+  <p>&copy; 2024 CAlbarillo | Pogi</p>
+</footer>
+</html>
