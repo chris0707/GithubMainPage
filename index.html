@@ -11,7 +11,7 @@
   <h1>StleathStride|Projects</h1>
 </div>
 <div class="cardContainer">
-  <div class="card">
+  <div class="card" onclick="redirectToPage('https://chris0707.github.io/taskplanner/')">
     <img src="img/taskplanner.png" alt="Task Planner">
     <h3 class="title">Task Planner</h3>
     <div class="overlay">
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="redirectToPage('https://chris0707.github.io/expensetracker/')">
     <img src="img/expensetracker.png" alt="Expense Tracker">
     <h3 class="title">Expense Tracker</h3>
     <div class="overlay">
@@ -41,6 +41,11 @@
       card.querySelector('.overlay').style.opacity = '0';
     });
   });
+
+  function redirectToPage(url){
+    window.location.href = url;
+  }
+
 </script>
 </body>
 <footer>
